@@ -1,0 +1,63 @@
+*{ padding: 0; margin: 0; font-family: calibri }
+table
+        {
+            border-bottom: #D0D7DB solid 1px;
+            border-left: #D0D7DB solid 1px;
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 30px;
+        }
+        th, td
+        {
+            height: 10px;
+            width: 55px;
+            margin: 0;
+        }
+        .header
+        {
+            background: url( '../Img/slice.png' ) repeat-x;
+            border-left: #D0D7DB solid 1px;
+        }
+        .headerSelected
+        {
+            background: url( '../Img/slice-selected.png' ) repeat-x;
+            border-left: #D0D7DB solid 1px;
+        }
+        .cell
+        {
+            border-right: 1px solid #D0D7DB;
+            border-top: 1px solid #D0D7DB;
+            padding: 3px;
+        }
+        .cellSelected
+        {
+            border: 3px solid black;
+            padding: 0;
+        }
+        .sideColumn
+        {
+            background-color: #E4ECF7;
+            border: 1px solid #9EB6CE;
+            border-top: 0px;
+            height: 18px;
+            padding: 0;
+            width: 24px;
+        }
+        .sideColumnSelected
+        {
+            background-color: #FFD58D;
+            border: 1px solid #F29536;
+        }
+        .selectButton
+        {
+            background: url('../Img/tri.png') no-repeat;
+            border: 0;
+        }
+        #functionRibbon
+        {
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            background-color: white;
+            border-bottom: 1px solid #D0D7DB;
+        }

@@ -1,0 +1,33 @@
+﻿<html>
+<head>
+    <link href="Styles/excel-table.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-1.4.4.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.tmpl.js" type="text/javascript"></script>
+    <script id="trTemplate" type="text/x-jquery-tmpl">
+        <tr id="${trID}"></tr>
+    </script>
+    <script id="thTemplate" type="text/x-jquery-tmpl">
+        <th class="${classID}" id="${headerID}">${header}</td>
+    </script>
+    <script id="tdTemplate" type="text/x-jquery-tmpl">
+        <td class="${classID}" id="${cellID}">${cell}</td>
+    </script>
+    <script src="Scripts/excel-table.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="functionRibbon">
+        <select style="width: 100px">
+            <option id="selected-cell" selected="selected"></option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+        </select>
+        <span>&nbsp;fx&nbsp;&nbsp;</span>
+        <input id="functionBox" class="functionBox" type="text" style="width: 90%" onfocus="functionBox.hasFocus = true;" onblur="functionBox.hasFocus = false;" />
+    </div>
+    <table id="tblExcel" class="excelTable" runat="server" cellspacing="0">
+    </table>
+</body>
+</html>
